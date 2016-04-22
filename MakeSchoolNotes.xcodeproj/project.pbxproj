@@ -20,13 +20,10 @@
 		3EBF3B311C6470970061C882 /* NoteDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF3B301C6470970061C882 /* NoteDisplayViewController.swift */; };
 		3ED5D8DB1C631A250009F6FF /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5D8DA1C631A250009F6FF /* NewNoteViewController.swift */; };
 		62096A131BABC24600564CFC /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62096A0E1BABC23900564CFC /* ConvenienceKit.framework */; };
-		62466AAB1BDFF22500F84A78 /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62096A0E1BABC23900564CFC /* ConvenienceKit.framework */; };
 		62466AAC1BDFF22500F84A78 /* ConvenienceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62096A0E1BABC23900564CFC /* ConvenienceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		62466AB11BDFF66C00F84A78 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62466AAF1BDFF66C00F84A78 /* Realm.framework */; };
 		62466AB21BDFF66C00F84A78 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62466AB01BDFF66C00F84A78 /* RealmSwift.framework */; };
 		62466AB51BE0008300F84A78 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62466AAF1BDFF66C00F84A78 /* Realm.framework */; };
 		62466AB61BE0008300F84A78 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62466AAF1BDFF66C00F84A78 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		62466AB71BE0008300F84A78 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62466AB01BDFF66C00F84A78 /* RealmSwift.framework */; };
 		62466AB81BE0008300F84A78 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62466AB01BDFF66C00F84A78 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -107,9 +104,6 @@
 				62466AB21BDFF66C00F84A78 /* RealmSwift.framework in Frameworks */,
 				2EED6B521B9E520500CD5441 /* RealmSwift.framework in Frameworks */,
 				62466AB51BE0008300F84A78 /* Realm.framework in Frameworks */,
-				62466AAB1BDFF22500F84A78 /* ConvenienceKit.framework in Frameworks */,
-				62466AB71BE0008300F84A78 /* RealmSwift.framework in Frameworks */,
-				62466AB11BDFF66C00F84A78 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +225,7 @@
 		2EBB112B1B9E3F5E005D313C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Chris Orcutt";
 				TargetAttributes = {
 					2EBB11321B9E3F5E005D313C = {
