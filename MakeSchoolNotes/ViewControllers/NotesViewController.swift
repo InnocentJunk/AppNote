@@ -112,7 +112,7 @@ extension NotesViewController //เพิ่มความยืดหยุ่
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete{
-            let note = notes[indexPath.row] as Object
+            //let note = notes[indexPath.row] as Object
             do{
                 let realm = try Realm()  //เชื่อมดาต้าเบส
                 notes = realm.objects(Note).sorted("modificationDate", ascending: false) //ascending คือเรียงจาก น้อยไปมาก เป็น false คือกลับกัน
