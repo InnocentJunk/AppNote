@@ -20,13 +20,13 @@ public class KeyboardNotificationHandler: NSObject {
     super.init()
     
     NSNotificationCenter.defaultCenter().addObserver(self,
-      selector: "keyboardWillBeShown:",
+      selector: #selector(KeyboardNotificationHandler.keyboardWillBeShown(_:)),
       name: "UIKeyboardWillShowNotification",
       object: nil
     )
     
     NSNotificationCenter.defaultCenter().addObserver(self,
-      selector: "keyboardWillBeHidden:",
+      selector: #selector(KeyboardNotificationHandler.keyboardWillBeHidden(_:)),
       name: "UIKeyboardWillHideNotification",
       object: nil
     )

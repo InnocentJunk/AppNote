@@ -24,12 +24,12 @@ public class TextView : UITextView {
   
   private func initialize() {
     NSNotificationCenter.defaultCenter().addObserver(self,
-      selector: "textViewDidBeginEditing:",
+      selector: #selector(UITextViewDelegate.textViewDidBeginEditing(_:)),
       name: UITextViewTextDidBeginEditingNotification,
       object: self)
     
     NSNotificationCenter.defaultCenter().addObserver(self,
-      selector: "textViewDidEndEditing:",
+      selector: #selector(UITextViewDelegate.textViewDidEndEditing(_:)),
       name: UITextViewTextDidEndEditingNotification,
       object: self)
   }

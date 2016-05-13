@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol TimelineComponentTarget: class {
-  typealias ContentType
+  associatedtype ContentType
   
   var defaultRange: Range<Int> { get }
   var additionalRangeSize: Int { get }
@@ -44,7 +44,7 @@ public class TimelineComponent <T: Equatable, S: TimelineComponentTarget where S
     
     targetTrampoline = TargetTrampoline(target: self)
     
-    refreshControl.addTarget(targetTrampoline, action: "refresh:", forControlEvents: .ValueChanged)
+    refreshControl.addTarget(targetTrampoline, action: #selector(TargetTrampoline.refresh(_:)), forControlEvents: .ValueChanged)
   }
   
   public func refresh(sender: AnyObject) {
